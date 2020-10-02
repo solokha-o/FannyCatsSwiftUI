@@ -11,6 +11,10 @@
 		DB94F24325235C7900DA0BA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94F24225235C7900DA0BA4 /* ContentView.swift */; };
 		DB94F24525235C7D00DA0BA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB94F24425235C7D00DA0BA4 /* Assets.xcassets */; };
 		DB94F24825235C7D00DA0BA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB94F24725235C7D00DA0BA4 /* Preview Assets.xcassets */; };
+		DB94F25125235E9100DA0BA4 /* CatBreedsDataBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94F25025235E9100DA0BA4 /* CatBreedsDataBaseModel.swift */; };
+		DB94F25425235ED800DA0BA4 /* DataCatBreeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94F25325235ED800DA0BA4 /* DataCatBreeds.swift */; };
+		DB94F257252369A400DA0BA4 /* CatBreedsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94F256252369A400DA0BA4 /* CatBreedsRow.swift */; };
+		DB94F25B2523896F00DA0BA4 /* CatDataBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94F25A2523896F00DA0BA4 /* CatDataBaseModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		DB94F24425235C7D00DA0BA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB94F24725235C7D00DA0BA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DB94F24925235C7D00DA0BA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB94F25025235E9100DA0BA4 /* CatBreedsDataBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatBreedsDataBaseModel.swift; sourceTree = "<group>"; };
+		DB94F25325235ED800DA0BA4 /* DataCatBreeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCatBreeds.swift; sourceTree = "<group>"; };
+		DB94F256252369A400DA0BA4 /* CatBreedsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsRow.swift; sourceTree = "<group>"; };
+		DB94F25A2523896F00DA0BA4 /* CatDataBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatDataBaseModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,10 @@
 			children = (
 				DB94F24025235C7900DA0BA4 /* FannyCatsSwiftUIApp.swift */,
 				DB94F24225235C7900DA0BA4 /* ContentView.swift */,
+				DB94F25025235E9100DA0BA4 /* CatBreedsDataBaseModel.swift */,
+				DB94F25A2523896F00DA0BA4 /* CatDataBaseModel.swift */,
+				DB94F25325235ED800DA0BA4 /* DataCatBreeds.swift */,
+				DB94F256252369A400DA0BA4 /* CatBreedsRow.swift */,
 				DB94F24425235C7D00DA0BA4 /* Assets.xcassets */,
 				DB94F24925235C7D00DA0BA4 /* Info.plist */,
 				DB94F24625235C7D00DA0BA4 /* Preview Content */,
@@ -139,7 +151,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB94F24325235C7900DA0BA4 /* ContentView.swift in Sources */,
+				DB94F25425235ED800DA0BA4 /* DataCatBreeds.swift in Sources */,
+				DB94F257252369A400DA0BA4 /* CatBreedsRow.swift in Sources */,
 				DB94F24125235C7900DA0BA4 /* FannyCatsSwiftUIApp.swift in Sources */,
+				DB94F25125235E9100DA0BA4 /* CatBreedsDataBaseModel.swift in Sources */,
+				DB94F25B2523896F00DA0BA4 /* CatDataBaseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
