@@ -11,14 +11,15 @@ import SwiftUI
 //configure row
 struct CatBreedsRow: View {
     // create instance of CatBreedsDataBaseModel
-    var catBreeds: CatBreedsDataBaseModel
+    var catBreed: CatBreedsDataBaseModel
     
     var body: some View {
         //configure image and text in horizontal stack and 2 text in vertical stack
         HStack {
+//            Text(catBreed.imageUrl)
             VStack(alignment: .leading) {
-                Text(catBreeds.name)
-                Text("Country of Origin - " + catBreeds.origin)
+                Text(catBreed.name)
+                Text("Country of Origin - " + catBreed.origin)
                     .font(.caption)
             }
         }
@@ -28,8 +29,8 @@ struct CatBreedsRow: View {
 struct CatBreedsRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            CatBreedsRow(catBreeds: catBreedsData[0])
-            CatBreedsRow(catBreeds: catBreedsData[1])
+            CatBreedsRow(catBreed: catBreedsData[0])
+            CatBreedsRow(catBreed: catBreedsData[1])
         }
         .previewLayout(.fixed(width: 300, height: 70))
     }

@@ -10,8 +10,9 @@ import SwiftUI
 @main
 struct FannyCatsSwiftUIApp: App {
     var body: some Scene {
+        //configure run app from TabMenu
         WindowGroup {
-            ContentView()
+            TabMenu()
         }
     }
 }
