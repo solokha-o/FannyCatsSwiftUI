@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Breeds: View {
+struct BreedsList: View {
     
     init() {
         UINavigationBar.appearance().barTintColor = .systemTeal
@@ -17,8 +17,9 @@ struct Breeds: View {
     var body: some View {
         //create NavigationView and configure it
         NavigationView {
-            //create list from CatBreedsRow
+            //create list from CatBreedsRow and add image from CatImage
             List(catBreedsData) { catBreed in
+                CatImage(breedId: catBreed.id)
                 CatBreedsRow(catBreed: catBreed)
             }
             .navigationBarTitle("Breeds")
@@ -28,6 +29,6 @@ struct Breeds: View {
 
 struct Breeds_Previews: PreviewProvider {
     static var previews: some View {
-        Breeds()
+        BreedsList()
     }
 }

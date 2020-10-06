@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: - CatDataBaseModel
-struct CatDataBaseModel: Codable {
+struct CatDataBaseModel: Codable, Identifiable {
     let breeds: [Breed]
     let id: String
     let url: String
@@ -17,18 +17,18 @@ struct CatDataBaseModel: Codable {
 }
 
 // MARK: - Breed
-struct Breed: Codable {
+struct Breed: Codable, Identifiable {
     let weight: Weight
     let id, name, temperament, origin: String
     let countryCodes, countryCode, breedDescription, lifeSpan: String
-    let indoor, lap: Int
-    let altNames: String
+    let indoor, lap: Int?
+    let altNames: String?
     let adaptability, affectionLevel, childFriendly, dogFriendly: Int
     let energyLevel, grooming, healthIssues, intelligence: Int
     let sheddingLevel, socialNeeds, strangerFriendly, vocalisation: Int
     let experimental, hairless, natural, rare: Int
     let rex, suppressedTail, shortLegs: Int
-    let wikipediaURL: String
+    let wikipediaURL: String?
     let hypoallergenic: Int
 
     enum CodingKeys: String, CodingKey {

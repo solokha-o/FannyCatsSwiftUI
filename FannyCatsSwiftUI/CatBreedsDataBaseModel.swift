@@ -11,7 +11,7 @@ import UIKit
 import SwiftUI
 
 // MARK: - CatBreedsDataBaseModel
-struct CatBreedsDataBaseModel: Codable {
+struct CatBreedsDataBaseModel: Codable, Identifiable {
     let weight: Weight
     let id, name: String
     let cfaURL: String?
@@ -69,3 +69,4 @@ struct Weight: Codable {
 }
 
 typealias CatBreeds = [CatBreedsDataBaseModel]
+

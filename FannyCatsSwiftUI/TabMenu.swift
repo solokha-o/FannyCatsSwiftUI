@@ -18,7 +18,7 @@ struct TabMenu: View {
         //create TabView and configure it
         TabView {
             //configure 1-st item "Cat Breeds"
-            Breeds()
+            BreedsList()
                 .tabItem {
                     Image("item1")
                     Text("Cat breeds")
