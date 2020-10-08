@@ -20,6 +20,7 @@ struct BreedsList: View {
             //create list from CatBreedsRow and add image from CatImage
             List(catBreedsData) { catBreed in
                 CatImage(breedId: catBreed.id)
+                Divider()
                 CatBreedsRow(catBreed: catBreed)
             }
             .navigationBarTitle("Breeds")

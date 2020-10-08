@@ -14,14 +14,11 @@ struct CatBreedsRow: View {
     var catBreed: CatBreedsDataBaseModel
     
     var body: some View {
-        //configure image and text in horizontal stack and 2 text in vertical stack
-        HStack {
-//            Text(catBreed.imageUrl)
-            VStack(alignment: .leading) {
-                Text(catBreed.name)
-                Text("Country of Origin - " + catBreed.origin)
-                    .font(.caption)
-            }
+        //configure 2 text in vertical stack
+        VStack(alignment: .leading) {
+            Text(catBreed.name)
+            Text("Country of Origin - " + catBreed.origin)
+                .font(.caption)
         }
     }
 }
