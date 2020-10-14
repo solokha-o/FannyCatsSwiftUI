@@ -18,6 +18,8 @@
 		DB94F25425235ED800DA0BA4 /* DataCatBreeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94F25325235ED800DA0BA4 /* DataCatBreeds.swift */; };
 		DB94F257252369A400DA0BA4 /* CatBreedsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94F256252369A400DA0BA4 /* CatBreedsRow.swift */; };
 		DB94F25B2523896F00DA0BA4 /* CatDataBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94F25A2523896F00DA0BA4 /* CatDataBaseModel.swift */; };
+		DBD0CD64252F578C00B60A50 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD0CD63252F578B00B60A50 /* WebView.swift */; };
+		DBD0CD67252F5D4E00B60A50 /* CatBreedsDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD0CD66252F5D4E00B60A50 /* CatBreedsDetail.swift */; };
 		DBE8112D252CC2D300B4B666 /* LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE8112C252CC2D300B4B666 /* LoadImage.swift */; };
 		DBE81131252CC56700B4B666 /* CatImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE81130252CC56700B4B666 /* CatImage.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +38,8 @@
 		DB94F25325235ED800DA0BA4 /* DataCatBreeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCatBreeds.swift; sourceTree = "<group>"; };
 		DB94F256252369A400DA0BA4 /* CatBreedsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsRow.swift; sourceTree = "<group>"; };
 		DB94F25A2523896F00DA0BA4 /* CatDataBaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatDataBaseModel.swift; sourceTree = "<group>"; };
+		DBD0CD63252F578B00B60A50 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		DBD0CD66252F5D4E00B60A50 /* CatBreedsDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatBreedsDetail.swift; sourceTree = "<group>"; };
 		DBE8112C252CC2D300B4B666 /* LoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadImage.swift; sourceTree = "<group>"; };
 		DBE81130252CC56700B4B666 /* CatImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -81,6 +85,8 @@
 				DB3186FD252B56DE001CB851 /* BreedsList.swift */,
 				DB94F256252369A400DA0BA4 /* CatBreedsRow.swift */,
 				DBE81130252CC56700B4B666 /* CatImage.swift */,
+				DBD0CD63252F578B00B60A50 /* WebView.swift */,
+				DBD0CD66252F5D4E00B60A50 /* CatBreedsDetail.swift */,
 				DB94F24425235C7D00DA0BA4 /* Assets.xcassets */,
 				DB94F24925235C7D00DA0BA4 /* Info.plist */,
 				DB94F24625235C7D00DA0BA4 /* Preview Content */,
@@ -170,10 +176,12 @@
 				DBE81131252CC56700B4B666 /* CatImage.swift in Sources */,
 				DB94F25425235ED800DA0BA4 /* DataCatBreeds.swift in Sources */,
 				DB318702252B5FA0001CB851 /* TabMenu.swift in Sources */,
+				DBD0CD67252F5D4E00B60A50 /* CatBreedsDetail.swift in Sources */,
 				DB3186F7252B3510001CB851 /* DataCat.swift in Sources */,
 				DB94F257252369A400DA0BA4 /* CatBreedsRow.swift in Sources */,
 				DB3186FE252B56DE001CB851 /* BreedsList.swift in Sources */,
 				DB94F24125235C7900DA0BA4 /* FannyCatsSwiftUIApp.swift in Sources */,
+				DBD0CD64252F578C00B60A50 /* WebView.swift in Sources */,
 				DB94F25125235E9100DA0BA4 /* CatBreedsDataBaseModel.swift in Sources */,
 				DB94F25B2523896F00DA0BA4 /* CatDataBaseModel.swift in Sources */,
 			);

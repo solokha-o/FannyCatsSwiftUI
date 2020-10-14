@@ -19,11 +19,16 @@ struct BreedsList: View {
         NavigationView {
             //create list from CatBreedsRow and add image from CatImage
             List(catBreedsData) { catBreed in
-                CatImage(breedId: catBreed.id)
-                Divider()
-                CatBreedsRow(catBreed: catBreed)
+               //configure NavigationLink with destination to CatBreedsDetail
+                NavigationLink(
+                    destination: CatBreedsDetail(link: catBreed.wikipediaURL ?? "https://www.google.com.ua")
+                        .navigationBarTitle(catBreed.name)) {
+                    CatImage(breedId: catBreed.id)
+                    Divider()
+                    CatBreedsRow(catBreed: catBreed)
+                }
             }
-            .navigationBarTitle("Breeds")
+            .navigationBarTitle("Breeds", displayMode: .automatic)
         }
     }
 }
