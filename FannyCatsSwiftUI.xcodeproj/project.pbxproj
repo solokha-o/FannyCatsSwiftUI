@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB077609253866C4003EB64A /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB077608253866C4003EB64A /* SearchBarView.swift */; };
 		DB3186F7252B3510001CB851 /* DataCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3186F6252B3510001CB851 /* DataCat.swift */; };
 		DB3186FE252B56DE001CB851 /* BreedsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3186FD252B56DE001CB851 /* BreedsList.swift */; };
 		DB318702252B5FA0001CB851 /* TabMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB318701252B5FA0001CB851 /* TabMenu.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB077608253866C4003EB64A /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		DB3186F6252B3510001CB851 /* DataCat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCat.swift; sourceTree = "<group>"; };
 		DB3186FD252B56DE001CB851 /* BreedsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsList.swift; sourceTree = "<group>"; };
 		DB318701252B5FA0001CB851 /* TabMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenu.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				DB3186FD252B56DE001CB851 /* BreedsList.swift */,
 				DB94F256252369A400DA0BA4 /* CatBreedsRow.swift */,
 				DBE81130252CC56700B4B666 /* CatImage.swift */,
+				DB077608253866C4003EB64A /* SearchBarView.swift */,
 				DBD0CD66252F5D4E00B60A50 /* CatBreedsDetail.swift */,
 				DBD0CD63252F578B00B60A50 /* WebView.swift */,
 			);
@@ -193,6 +196,7 @@
 				DB94F257252369A400DA0BA4 /* CatBreedsRow.swift in Sources */,
 				DB3186FE252B56DE001CB851 /* BreedsList.swift in Sources */,
 				DB94F24125235C7900DA0BA4 /* FannyCatsSwiftUIApp.swift in Sources */,
+				DB077609253866C4003EB64A /* SearchBarView.swift in Sources */,
 				DBD0CD64252F578C00B60A50 /* WebView.swift in Sources */,
 				DB94F25125235E9100DA0BA4 /* CatBreedsDataBaseModel.swift in Sources */,
 				DB94F25B2523896F00DA0BA4 /* CatDataBaseModel.swift in Sources */,
