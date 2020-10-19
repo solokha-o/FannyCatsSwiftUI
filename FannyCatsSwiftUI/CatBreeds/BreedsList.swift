@@ -17,7 +17,13 @@ struct BreedsList: View {
             //create list from CatBreedsRow and add image from CatImage and configure filter from catBreedsData in searchText
             List {
                 SearchBarView(text: $searchText)
-                ForEach(catBreedsData.filter({searchText.isEmpty ? true : $0.name.contains(searchText)})) { catBreed in
+                ForEach(catBreedsData.filter({ switch searchText.isEmpty {
+                case false:
+                    return $0.name.lowercased().contains(searchText.lowercased()) || $0.origin.lowercased().contains(searchText.lowercased())
+                default:
+                    return true
+                }
+                })) { catBreed in
                     //configure NavigationLink with destination to CatBreedsDetail
                     NavigationLink(
                         destination: CatBreedsDetail(link: catBreed.wikipediaURL ?? "https://www.google.com.ua")
