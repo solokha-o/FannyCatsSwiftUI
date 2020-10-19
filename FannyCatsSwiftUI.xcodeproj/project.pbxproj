@@ -11,6 +11,7 @@
 		DB3186F7252B3510001CB851 /* DataCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3186F6252B3510001CB851 /* DataCat.swift */; };
 		DB3186FE252B56DE001CB851 /* BreedsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3186FD252B56DE001CB851 /* BreedsList.swift */; };
 		DB318702252B5FA0001CB851 /* TabMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB318701252B5FA0001CB851 /* TabMenu.swift */; };
+		DB8AD6DB253DD0830045986B /* GuessCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8AD6DA253DD0830045986B /* GuessCat.swift */; };
 		DB94F24125235C7900DA0BA4 /* FannyCatsSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94F24025235C7900DA0BA4 /* FannyCatsSwiftUIApp.swift */; };
 		DB94F24525235C7D00DA0BA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB94F24425235C7D00DA0BA4 /* Assets.xcassets */; };
 		DB94F24825235C7D00DA0BA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB94F24725235C7D00DA0BA4 /* Preview Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		DB3186F6252B3510001CB851 /* DataCat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCat.swift; sourceTree = "<group>"; };
 		DB3186FD252B56DE001CB851 /* BreedsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsList.swift; sourceTree = "<group>"; };
 		DB318701252B5FA0001CB851 /* TabMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenu.swift; sourceTree = "<group>"; };
+		DB8AD6DA253DD0830045986B /* GuessCat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessCat.swift; sourceTree = "<group>"; };
 		DB94F23D25235C7900DA0BA4 /* FannyCatsSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FannyCatsSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB94F24025235C7900DA0BA4 /* FannyCatsSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FannyCatsSwiftUIApp.swift; sourceTree = "<group>"; };
 		DB94F24425235C7D00DA0BA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,6 +82,14 @@
 			path = CatBreeds;
 			sourceTree = "<group>";
 		};
+		DB8AD6D9253DD0360045986B /* GuessCat */ = {
+			isa = PBXGroup;
+			children = (
+				DB8AD6DA253DD0830045986B /* GuessCat.swift */,
+			);
+			path = GuessCat;
+			sourceTree = "<group>";
+		};
 		DB94F23425235C7800DA0BA4 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 				DB318701252B5FA0001CB851 /* TabMenu.swift */,
 				DB49FCF8253739F700E5220E /* Data */,
 				DB49FCFA25373A6B00E5220E /* CatBreeds */,
+				DB8AD6D9253DD0360045986B /* GuessCat */,
 				DB94F24425235C7D00DA0BA4 /* Assets.xcassets */,
 				DB94F24925235C7D00DA0BA4 /* Info.plist */,
 				DB94F24625235C7D00DA0BA4 /* Preview Content */,
@@ -197,6 +208,7 @@
 				DB3186FE252B56DE001CB851 /* BreedsList.swift in Sources */,
 				DB94F24125235C7900DA0BA4 /* FannyCatsSwiftUIApp.swift in Sources */,
 				DB077609253866C4003EB64A /* SearchBarView.swift in Sources */,
+				DB8AD6DB253DD0830045986B /* GuessCat.swift in Sources */,
 				DBD0CD64252F578C00B60A50 /* WebView.swift in Sources */,
 				DB94F25125235E9100DA0BA4 /* CatBreedsDataBaseModel.swift in Sources */,
 				DB94F25B2523896F00DA0BA4 /* CatDataBaseModel.swift in Sources */,
