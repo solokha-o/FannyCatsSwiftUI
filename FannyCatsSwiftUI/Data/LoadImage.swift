@@ -34,6 +34,12 @@ class LoadImage {
             self.downloadedImage = UIImage(data: data)
             DispatchQueue.main.async {
                 self.didChange.send(self)
+                //pass downloaded image to data model
+                for i in catBreedsData.indices {
+                    if catBreedsData[i].id == breedId {
+                        catBreedsData[i].image = self.downloadedImage
+                    }
+                }
             }
         }.resume()
     }

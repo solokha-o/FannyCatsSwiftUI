@@ -39,4 +39,3 @@ func loadCatBreeds<T: Decodable>(_ url: String) -> T {
         fatalError("Couldn't parse \(url) as \(T.self):\n\(error)")
     }
 }
-

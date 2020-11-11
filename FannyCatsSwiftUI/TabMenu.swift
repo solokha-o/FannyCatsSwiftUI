@@ -12,6 +12,7 @@ struct TabMenu: View {
     // state for to animate item's image from small to large
     @State var tabItem1 = false
     @State var tabItem2 = true
+    @State var tabItem3 = true
     
     init() {
         UITabBar.appearance().barTintColor = .systemTeal
@@ -25,29 +26,46 @@ struct TabMenu: View {
                 .onAppear {
                     self.tabItem1.toggle()
                     self.tabItem2.toggle()
+                    self.tabItem3.toggle()
                 }
                 .tabItem {
                     VStack {
                         Image(self.tabItem1 ? "item1-1" : "item1")
+                            .animation(.interpolatingSpring(mass: 0.7, stiffness: 200, damping: 10, initialVelocity: 4))
                         Text("Cat breeds")
                             .foregroundColor(Color.black)
                     }
-                    .animation(.interpolatingSpring(mass: 0.7, stiffness: 200, damping: 10, initialVelocity: 4))
-                    
                 }
-        //Configure 2-nd item "Guess Cat"
+            //Configure 2-nd item "Guess Cat"
             GuessCat()
                 .onAppear {
                     self.tabItem1.toggle()
                     self.tabItem2.toggle()
+                    self.tabItem3.toggle()
                 }
                 .tabItem {
                     VStack {
                         Image(self.tabItem2 ? "item2-1" : "item2")
+                            .animation(.interpolatingSpring(mass: 0.7, stiffness: 200, damping: 10, initialVelocity: 4))
                         Text("Guess cat")
                             .foregroundColor(Color.black)
                     }
-                    .animation(.interpolatingSpring(mass: 0.7, stiffness: 200, damping: 10, initialVelocity: 4))
+                }
+            //Configure 3-rd item "Cat Gallery"
+            CatGallery()
+                .onAppear {
+                    self.tabItem1.toggle()
+                    self.tabItem2.toggle()
+                    self.tabItem3.toggle()
+                }
+                .tabItem {
+                    VStack {
+                        Image(self.tabItem2 ? "item3-1" : "item3")
+                            .animation(.interpolatingSpring(mass: 0.7, stiffness: 200, damping: 10, initialVelocity: 4))
+                        Text("Cat Gallery")
+                            .foregroundColor(Color.black)
+                    }
+                    
                 }
         }
         .accentColor(Color.black)
@@ -57,27 +75,5 @@ struct TabMenu: View {
 struct TabMenu_Previews: PreviewProvider {
     static var previews: some View {
         TabMenu()
-    }
-}
-
-// Animating font size
-struct AnimatableSFImage: AnimatableModifier {
-    var size: CGFloat
-    
-    var animatableData: CGFloat {
-        get { size }
-        set { size = newValue }
-    }
-    
-    func body(content: Self.Content) -> some View {
-        content
-            .font(.system(size: size))
-    }
-}
-
-// helper extension
-extension Image {
-    func animatingSF(size: CGFloat) -> some View {
-        self.modifier(AnimatableSFImage(size: size))
     }
 }

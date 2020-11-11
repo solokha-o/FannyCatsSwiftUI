@@ -30,6 +30,8 @@ struct CatBreedsDataBaseModel: Codable, Identifiable {
     let wikipediaURL: String?
     let hypoallergenic: Int
     let catFriendly, bidability: Int?
+    // add new property cat breed image
+    var image: UIImage?
     enum CodingKeys: String, CodingKey {
         case weight, id, name
         case cfaURL = "cfa_url"
