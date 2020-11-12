@@ -11,7 +11,7 @@ import UIKit
 //add url for to load cat breeds
 let url = "https://api.thecatapi.com/v1/breeds"
 //create array catBreedsData by CatBreedsDataBaseModel
-let catBreedsData : [CatBreedsDataBaseModel] = loadCatBreeds(url)
+var catBreedsData : [CatBreedsDataBaseModel] = loadCatBreeds(url)
 // load cat breeds from url and to decode from JSON to CatBreedsDataBaseModel
 func loadCatBreeds<T: Decodable>(_ url: String) -> T {
     var data = Data()

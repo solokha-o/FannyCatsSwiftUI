@@ -8,21 +8,32 @@
 import SwiftUI
 
 struct CatGallery: View {
+    
     // create spacing between GridItem
     var spacing : CGFloat = 10
-    
+    // create flexible GridItem in two columns
     var gridItemLayout = [GridItem(.flexible()), GridItem(.flexible())]
     //configure collection 
     var body: some View {
+        //configure size and parameters of collection
         GeometryReader { geometry in
-            ScrollView {
-                LazyVGrid(columns: gridItemLayout, spacing: spacing) {
-                    ForEach(catBreedsData) { catBreed in
-                        GalleryImage(imageCat: catBreed.image, size: (geometry.size.width - 3*spacing)/2)
+            NavigationView {
+                ScrollView {
+                    LazyVGrid(columns: gridItemLayout, spacing: spacing) {
+                        ForEach(catBreedsData) { catBreed in
+                            //create and configure NavigationLink to destination CatImageDetail view
+                            NavigationLink(destination: CatImageDetail(imageCat: catBreed.image)
+                                            .navigationBarTitle(catBreed.name)) {
+                                GalleryImage(imageCat: catBreed.image, size: (geometry.size.width - 3*spacing)/2)
+                            }
+                        }
                     }
+                    
                 }
             }
         }
+        // TODO: not working
+        .navigationBarTitle("Cat images gallery", displayMode: .automatic)
     }
 }
 

@@ -28,7 +28,7 @@ struct GalleryImage: View {
             return AnyView(
                 ZStack {
                     RoundedRectangle(cornerRadius: 10, style: .circular)
-                        .stroke(Color.init(.systemTeal), lineWidth: 2)
+                        .stroke(Color.black, lineWidth: 2)
                         .foregroundColor(Color.white)
                     ProgressView()
                 }

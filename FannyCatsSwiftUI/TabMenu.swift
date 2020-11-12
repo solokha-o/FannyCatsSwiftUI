@@ -22,51 +22,53 @@ struct TabMenu: View {
         //create TabView and configure it
         TabView {
             //configure 1-st item "Cat Breeds"
-            BreedsList()
-                .onAppear {
-                    self.tabItem1.toggle()
-                    self.tabItem2.toggle()
-                    self.tabItem3.toggle()
+            BreedsList().tabItem {
+                VStack {
+                    Image(self.tabItem1 ? "item1-1" : "item1")
+                        .animation(.interpolatingSpring(mass: 0.7, stiffness: 200, damping: 10, initialVelocity: 4))
+                    Text("Cat breeds")
+                        .foregroundColor(Color.black)
                 }
-                .tabItem {
-                    VStack {
-                        Image(self.tabItem1 ? "item1-1" : "item1")
-                            .animation(.interpolatingSpring(mass: 0.7, stiffness: 200, damping: 10, initialVelocity: 4))
-                        Text("Cat breeds")
-                            .foregroundColor(Color.black)
-                    }
-                }
+            }
+            .onAppear() {
+                tabItem1 = true
+                tabItem2 = false
+                tabItem3 = false
+            }
+            .transition(.slide)
+            .animation(.default)
             //Configure 2-nd item "Guess Cat"
-            GuessCat()
-                .onAppear {
-                    self.tabItem1.toggle()
-                    self.tabItem2.toggle()
-                    self.tabItem3.toggle()
+            GuessCat().tabItem {
+                VStack {
+                    Image(self.tabItem2 ? "item2-1" : "item2")
+                        .animation(.interpolatingSpring(mass: 0.7, stiffness: 200, damping: 10, initialVelocity: 4))
+                    Text("Guess cat")
+                        .foregroundColor(Color.black)
                 }
-                .tabItem {
-                    VStack {
-                        Image(self.tabItem2 ? "item2-1" : "item2")
-                            .animation(.interpolatingSpring(mass: 0.7, stiffness: 200, damping: 10, initialVelocity: 4))
-                        Text("Guess cat")
-                            .foregroundColor(Color.black)
-                    }
-                }
+            }
+            .onAppear() {
+                tabItem1 = false
+                tabItem2 = true
+                tabItem3 = false
+            }
+            .transition(.slide)
+            .animation(.default)
             //Configure 3-rd item "Cat Gallery"
-            CatGallery()
-                .onAppear {
-                    self.tabItem1.toggle()
-                    self.tabItem2.toggle()
-                    self.tabItem3.toggle()
+            CatGallery().tabItem {
+                VStack {
+                    Image(self.tabItem3 ? "item3-1" : "item3")
+                        .animation(.interpolatingSpring(mass: 0.7, stiffness: 200, damping: 10, initialVelocity: 4))
+                    Text("Cat Gallery")
+                        .foregroundColor(Color.black)
                 }
-                .tabItem {
-                    VStack {
-                        Image(self.tabItem2 ? "item3-1" : "item3")
-                            .animation(.interpolatingSpring(mass: 0.7, stiffness: 200, damping: 10, initialVelocity: 4))
-                        Text("Cat Gallery")
-                            .foregroundColor(Color.black)
-                    }
-                    
-                }
+            }
+            .onAppear() {
+                tabItem1 = false
+                tabItem2 = false
+                tabItem3 = true
+            }
+            
+            .animation(.default)
         }
         .accentColor(Color.black)
     }
