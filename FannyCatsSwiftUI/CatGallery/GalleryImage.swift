@@ -20,6 +20,7 @@ struct GalleryImage: View {
                 ZStack{
                     Image(uiImage: image)
                         .resizable()
+                        .aspectRatio(contentMode: .fit)
                         .cornerRadius(10)
                 }
                 .frame(width: size, height: size)

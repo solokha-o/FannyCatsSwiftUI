@@ -25,6 +25,7 @@ struct CatImageDetail: View {
                     if let image = imageCat {
                         Image(uiImage: image)
                             .resizable()
+                            .aspectRatio(contentMode: .fit)
                             .cornerRadius(10)
                     } else {
                         ProgressView()

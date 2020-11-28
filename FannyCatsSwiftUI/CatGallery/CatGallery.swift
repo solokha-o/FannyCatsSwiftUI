@@ -27,13 +27,13 @@ struct CatGallery: View {
                                 GalleryImage(imageCat: catBreed.image, size: (geometry.size.width - 3*spacing)/2)
                             }
                         }
+                        .padding(10)
                     }
                     
                 }
+                .navigationBarTitle("Cat images gallery", displayMode: .automatic)
             }
         }
-        // TODO: not working
-        .navigationBarTitle("Cat images gallery", displayMode: .automatic)
     }
 }
 
