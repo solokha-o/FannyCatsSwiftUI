@@ -31,7 +31,7 @@ struct CatBreedsDataBaseModel: Codable, Identifiable {
     let hypoallergenic: Int
     let catFriendly, bidability: Int?
     // add new property cat breed image
-    var image: UIImage?
+    var image: UIImage? 
     enum CodingKeys: String, CodingKey {
         case weight, id, name
         case cfaURL = "cfa_url"
@@ -63,8 +63,14 @@ struct CatBreedsDataBaseModel: Codable, Identifiable {
         case catFriendly = "cat_friendly"
         case bidability
     }
+    //random cat breed
+    static func randomCatBreed(in catBreeds: [CatBreedsDataBaseModel]) -> CatBreedsDataBaseModel {
+        let randomIndex = Int.random(in: catBreeds.indices)
+        let catImage = LoadImage()
+        catImage.load(breedId: catBreeds[randomIndex].id)
+        return catBreeds[randomIndex]
+    }
 }
-
 // MARK: - Weight
 struct Weight: Codable {
     let imperial, metric: String

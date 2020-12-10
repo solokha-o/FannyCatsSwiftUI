@@ -8,10 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		DB077609253866C4003EB64A /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB077608253866C4003EB64A /* SearchBarView.swift */; };
+		DB08B9002582200C001E1026 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB08B8FF2582200C001E1026 /* WidgetKit.framework */; };
+		DB08B9022582200C001E1026 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB08B9012582200C001E1026 /* SwiftUI.framework */; };
+		DB08B9052582200C001E1026 /* WidgetFannyCatsSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB08B9042582200C001E1026 /* WidgetFannyCatsSwiftUI.swift */; };
+		DB08B9082582200F001E1026 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB08B9072582200F001E1026 /* Assets.xcassets */; };
+		DB08B90A2582200F001E1026 /* WidgetFannyCatsSwiftUI.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DB08B9062582200C001E1026 /* WidgetFannyCatsSwiftUI.intentdefinition */; };
+		DB08B90B2582200F001E1026 /* WidgetFannyCatsSwiftUI.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = DB08B9062582200C001E1026 /* WidgetFannyCatsSwiftUI.intentdefinition */; };
+		DB08B90E2582200F001E1026 /* WidgetFannyCatsSwiftUIExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DB08B8FD2582200C001E1026 /* WidgetFannyCatsSwiftUIExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DB08B915258226B7001E1026 /* CatImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE81130252CC56700B4B666 /* CatImage.swift */; };
+		DB08B918258226C1001E1026 /* CatBreedsDataBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94F25025235E9100DA0BA4 /* CatBreedsDataBaseModel.swift */; };
+		DB08B91B258226C5001E1026 /* CatDataBaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94F25A2523896F00DA0BA4 /* CatDataBaseModel.swift */; };
+		DB08B91E258226C8001E1026 /* DataCatBreeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB94F25325235ED800DA0BA4 /* DataCatBreeds.swift */; };
+		DB08B924258226D5001E1026 /* LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE8112C252CC2D300B4B666 /* LoadImage.swift */; };
+		DB08B92B25822E13001E1026 /* FannyCatsWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB08B92725822730001E1026 /* FannyCatsWidgetView.swift */; };
+		DB08B933258266C3001E1026 /* GuessCatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB08B932258266C3001E1026 /* GuessCatModel.swift */; };
 		DB0D345B253EF9F800757E67 /* CatGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0D345A253EF9F800757E67 /* CatGallery.swift */; };
 		DB0D345F253F0D3700757E67 /* GalleryImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0D345E253F0D3700757E67 /* GalleryImage.swift */; };
 		DB1F419B2577A1C80000EA98 /* ShareSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB1F419A2577A1C80000EA98 /* ShareSheet.swift */; };
-		DB3186F7252B3510001CB851 /* DataCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3186F6252B3510001CB851 /* DataCat.swift */; };
 		DB3186FE252B56DE001CB851 /* BreedsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3186FD252B56DE001CB851 /* BreedsList.swift */; };
 		DB318702252B5FA0001CB851 /* TabMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB318701252B5FA0001CB851 /* TabMenu.swift */; };
 		DB34C0AC255BCBD50093260E /* CatImageDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB34C0AB255BCBD50093260E /* CatImageDetail.swift */; };
@@ -29,12 +42,44 @@
 		DBE81131252CC56700B4B666 /* CatImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE81130252CC56700B4B666 /* CatImage.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DB08B90C2582200F001E1026 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB94F23525235C7800DA0BA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB08B8FC2582200C001E1026;
+			remoteInfo = WidgetFannyCatsSwiftUIExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DB08B90F2582200F001E1026 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DB08B90E2582200F001E1026 /* WidgetFannyCatsSwiftUIExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		DB077608253866C4003EB64A /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		DB08B8FD2582200C001E1026 /* WidgetFannyCatsSwiftUIExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = WidgetFannyCatsSwiftUIExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB08B8FF2582200C001E1026 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		DB08B9012582200C001E1026 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		DB08B9042582200C001E1026 /* WidgetFannyCatsSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetFannyCatsSwiftUI.swift; sourceTree = "<group>"; };
+		DB08B9062582200C001E1026 /* WidgetFannyCatsSwiftUI.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = WidgetFannyCatsSwiftUI.intentdefinition; sourceTree = "<group>"; };
+		DB08B9072582200F001E1026 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB08B9092582200F001E1026 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB08B92725822730001E1026 /* FannyCatsWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FannyCatsWidgetView.swift; sourceTree = "<group>"; };
+		DB08B932258266C3001E1026 /* GuessCatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessCatModel.swift; sourceTree = "<group>"; };
 		DB0D345A253EF9F800757E67 /* CatGallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatGallery.swift; sourceTree = "<group>"; };
 		DB0D345E253F0D3700757E67 /* GalleryImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryImage.swift; sourceTree = "<group>"; };
 		DB1F419A2577A1C80000EA98 /* ShareSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheet.swift; sourceTree = "<group>"; };
-		DB3186F6252B3510001CB851 /* DataCat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCat.swift; sourceTree = "<group>"; };
 		DB3186FD252B56DE001CB851 /* BreedsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreedsList.swift; sourceTree = "<group>"; };
 		DB318701252B5FA0001CB851 /* TabMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabMenu.swift; sourceTree = "<group>"; };
 		DB34C0AB255BCBD50093260E /* CatImageDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatImageDetail.swift; sourceTree = "<group>"; };
@@ -55,6 +100,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DB08B8FA2582200C001E1026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB08B9022582200C001E1026 /* SwiftUI.framework in Frameworks */,
+				DB08B9002582200C001E1026 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DB94F23A25235C7900DA0BA4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -65,6 +119,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB08B8FE2582200C001E1026 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB08B8FF2582200C001E1026 /* WidgetKit.framework */,
+				DB08B9012582200C001E1026 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB08B9032582200C001E1026 /* WidgetFannyCatsSwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				DB08B9042582200C001E1026 /* WidgetFannyCatsSwiftUI.swift */,
+				DB08B92725822730001E1026 /* FannyCatsWidgetView.swift */,
+				DB08B9062582200C001E1026 /* WidgetFannyCatsSwiftUI.intentdefinition */,
+				DB08B9072582200F001E1026 /* Assets.xcassets */,
+				DB08B9092582200F001E1026 /* Info.plist */,
+			);
+			path = WidgetFannyCatsSwiftUI;
+			sourceTree = "<group>";
+		};
 		DB0D3459253EF9C400757E67 /* CatGallery */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,7 +157,6 @@
 				DB94F25025235E9100DA0BA4 /* CatBreedsDataBaseModel.swift */,
 				DB94F25A2523896F00DA0BA4 /* CatDataBaseModel.swift */,
 				DB94F25325235ED800DA0BA4 /* DataCatBreeds.swift */,
-				DB3186F6252B3510001CB851 /* DataCat.swift */,
 				DBE8112C252CC2D300B4B666 /* LoadImage.swift */,
 			);
 			path = Data;
@@ -105,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				DB8AD6DA253DD0830045986B /* GuessCat.swift */,
+				DB08B932258266C3001E1026 /* GuessCatModel.swift */,
 			);
 			path = GuessCat;
 			sourceTree = "<group>";
@@ -113,6 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				DB94F23F25235C7900DA0BA4 /* FannyCatsSwiftUI */,
+				DB08B9032582200C001E1026 /* WidgetFannyCatsSwiftUI */,
+				DB08B8FE2582200C001E1026 /* Frameworks */,
 				DB94F23E25235C7900DA0BA4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -121,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				DB94F23D25235C7900DA0BA4 /* FannyCatsSwiftUI.app */,
+				DB08B8FD2582200C001E1026 /* WidgetFannyCatsSwiftUIExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -152,6 +230,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DB08B8FC2582200C001E1026 /* WidgetFannyCatsSwiftUIExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB08B9122582200F001E1026 /* Build configuration list for PBXNativeTarget "WidgetFannyCatsSwiftUIExtension" */;
+			buildPhases = (
+				DB08B8F92582200C001E1026 /* Sources */,
+				DB08B8FA2582200C001E1026 /* Frameworks */,
+				DB08B8FB2582200C001E1026 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WidgetFannyCatsSwiftUIExtension;
+			productName = WidgetFannyCatsSwiftUIExtension;
+			productReference = DB08B8FD2582200C001E1026 /* WidgetFannyCatsSwiftUIExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		DB94F23C25235C7900DA0BA4 /* FannyCatsSwiftUI */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB94F24C25235C7D00DA0BA4 /* Build configuration list for PBXNativeTarget "FannyCatsSwiftUI" */;
@@ -159,10 +254,12 @@
 				DB94F23925235C7900DA0BA4 /* Sources */,
 				DB94F23A25235C7900DA0BA4 /* Frameworks */,
 				DB94F23B25235C7900DA0BA4 /* Resources */,
+				DB08B90F2582200F001E1026 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DB08B90D2582200F001E1026 /* PBXTargetDependency */,
 			);
 			name = FannyCatsSwiftUI;
 			productName = FannyCatsSwiftUI;
@@ -175,9 +272,12 @@
 		DB94F23525235C7800DA0BA4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1220;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					DB08B8FC2582200C001E1026 = {
+						CreatedOnToolsVersion = 12.2;
+					};
 					DB94F23C25235C7900DA0BA4 = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
@@ -197,11 +297,20 @@
 			projectRoot = "";
 			targets = (
 				DB94F23C25235C7900DA0BA4 /* FannyCatsSwiftUI */,
+				DB08B8FC2582200C001E1026 /* WidgetFannyCatsSwiftUIExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DB08B8FB2582200C001E1026 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB08B9082582200F001E1026 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DB94F23B25235C7900DA0BA4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,10 +323,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DB08B8F92582200C001E1026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB08B90A2582200F001E1026 /* WidgetFannyCatsSwiftUI.intentdefinition in Sources */,
+				DB08B915258226B7001E1026 /* CatImage.swift in Sources */,
+				DB08B92B25822E13001E1026 /* FannyCatsWidgetView.swift in Sources */,
+				DB08B918258226C1001E1026 /* CatBreedsDataBaseModel.swift in Sources */,
+				DB08B91E258226C8001E1026 /* DataCatBreeds.swift in Sources */,
+				DB08B924258226D5001E1026 /* LoadImage.swift in Sources */,
+				DB08B91B258226C5001E1026 /* CatDataBaseModel.swift in Sources */,
+				DB08B9052582200C001E1026 /* WidgetFannyCatsSwiftUI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DB94F23925235C7900DA0BA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB08B933258266C3001E1026 /* GuessCatModel.swift in Sources */,
 				DB0D345F253F0D3700757E67 /* GalleryImage.swift in Sources */,
 				DBE8112D252CC2D300B4B666 /* LoadImage.swift in Sources */,
 				DBE81131252CC56700B4B666 /* CatImage.swift in Sources */,
@@ -226,13 +351,13 @@
 				DB34C0AC255BCBD50093260E /* CatImageDetail.swift in Sources */,
 				DBD0CD67252F5D4E00B60A50 /* CatBreedsDetail.swift in Sources */,
 				DB1F419B2577A1C80000EA98 /* ShareSheet.swift in Sources */,
-				DB3186F7252B3510001CB851 /* DataCat.swift in Sources */,
 				DB0D345B253EF9F800757E67 /* CatGallery.swift in Sources */,
 				DB94F257252369A400DA0BA4 /* CatBreedsRow.swift in Sources */,
 				DB3186FE252B56DE001CB851 /* BreedsList.swift in Sources */,
 				DB94F24125235C7900DA0BA4 /* FannyCatsSwiftUIApp.swift in Sources */,
 				DB077609253866C4003EB64A /* SearchBarView.swift in Sources */,
 				DB8AD6DB253DD0830045986B /* GuessCat.swift in Sources */,
+				DB08B90B2582200F001E1026 /* WidgetFannyCatsSwiftUI.intentdefinition in Sources */,
 				DBD0CD64252F578C00B60A50 /* WebView.swift in Sources */,
 				DB94F25125235E9100DA0BA4 /* CatBreedsDataBaseModel.swift in Sources */,
 				DB94F25B2523896F00DA0BA4 /* CatDataBaseModel.swift in Sources */,
@@ -241,7 +366,59 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		DB08B90D2582200F001E1026 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB08B8FC2582200C001E1026 /* WidgetFannyCatsSwiftUIExtension */;
+			targetProxy = DB08B90C2582200F001E1026 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		DB08B9102582200F001E1026 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X8NNCQ3HW6;
+				INFOPLIST_FILE = WidgetFannyCatsSwiftUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Oleksandr-Solokha.FannyCatsSwiftUI.WidgetFannyCatsSwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB08B9112582200F001E1026 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X8NNCQ3HW6;
+				INFOPLIST_FILE = WidgetFannyCatsSwiftUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Oleksandr-Solokha.FannyCatsSwiftUI.WidgetFannyCatsSwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		DB94F24A25235C7D00DA0BA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -361,6 +538,7 @@
 		DB94F24D25235C7D00DA0BA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -383,6 +561,7 @@
 		DB94F24E25235C7D00DA0BA4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -405,6 +584,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DB08B9122582200F001E1026 /* Build configuration list for PBXNativeTarget "WidgetFannyCatsSwiftUIExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB08B9102582200F001E1026 /* Debug */,
+				DB08B9112582200F001E1026 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DB94F23825235C7800DA0BA4 /* Build configuration list for PBXProject "FannyCatsSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

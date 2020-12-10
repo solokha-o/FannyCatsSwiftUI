@@ -9,14 +9,14 @@ import SwiftUI
 import UIKit
 
 //add url for to load cat breeds
-let url = "https://api.thecatapi.com/v1/breeds"
+let link = "https://api.thecatapi.com/v1/breeds"
 //create array catBreedsData by CatBreedsDataBaseModel
-var catBreedsData : [CatBreedsDataBaseModel] = loadCatBreeds(url)
+var catBreedsData : [CatBreedsDataBaseModel] = loadData(link)
 // load cat breeds from url and to decode from JSON to CatBreedsDataBaseModel
-func loadCatBreeds<T: Decodable>(_ url: String) -> T {
+func loadData<T: Decodable>(_ link: String) -> T {
     var data = Data()
     // url and request whit api key
-    guard let url = URL(string: url)
+    guard let url = URL(string: link)
     else {
         fatalError("Codn't find url")
     }
