@@ -26,8 +26,7 @@ struct BreedsList: View {
                 })) { catBreed in
                     //configure NavigationLink with destination to CatBreedsDetail
                     NavigationLink(
-                        destination: CatBreedsDetail(link: catBreed.wikipediaURL ?? "https://www.google.com.ua")
-                            .navigationBarTitle(catBreed.name)) {
+                        destination: CatBreedsDetail(link: catBreed.wikipediaURL ?? "https://www.google.com.ua").navigationTitle(catBreed.name)) {
                         CatImage(breedId: catBreed.id)
                             .padding(.trailing)
                         CatBreedsRow(catBreed: catBreed)
