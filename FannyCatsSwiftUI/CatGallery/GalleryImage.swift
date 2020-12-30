@@ -16,25 +16,21 @@ struct GalleryImage: View {
     //set Image if image nil or not
     var body: some View {
         if let image = imageCat {
-            return AnyView(
-                ZStack{
-                    Image(uiImage: image)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .cornerRadius(10)
-                }
-                .frame(width: size, height: size)
-            )
+            ZStack{
+                Image(uiImage: image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .cornerRadius(10)
+            }
+            .frame(width: size, height: size)
         } else {
-            return AnyView(
-                ZStack {
-                    RoundedRectangle(cornerRadius: 10, style: .circular)
-                        .stroke(Color.black, lineWidth: 2)
-                        .foregroundColor(Color.white)
-                    ProgressView()
-                }
-                .frame(width: size, height: size)
-            )
+            ZStack {
+                RoundedRectangle(cornerRadius: 10, style: .circular)
+                    .stroke(Color.black, lineWidth: 2)
+                    .foregroundColor(Color.white)
+                ProgressView()
+            }
+            .frame(width: size, height: size)
         }
     }
 }
