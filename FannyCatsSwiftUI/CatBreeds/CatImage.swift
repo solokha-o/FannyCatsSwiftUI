@@ -16,22 +16,20 @@ struct CatImage: View {
     }
     //set Image if image nil or not
     var body: some View {
-        if let image = self.loadImage.downloadedImage {
-            return AnyView(Image(uiImage: image)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 75, height: 75)
-                            .clipShape(Circle())
-                            .overlay(Circle().stroke(Color.white, lineWidth: 4))
-                            .shadow(radius: 10))
-        } else {
-            //set ProgressView if image nil
-            return AnyView(ProgressView()
-                            .frame(width: 75, height: 75)
-                            .clipShape(Circle())
-                            .overlay(Circle().stroke(Color.white, lineWidth: 4))
-                            .shadow(radius: 10))
+        Group {
+            if let image = self.loadImage.downloadedImage {
+                Image(uiImage: image)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+            } else {
+                //set ProgressView if image nil
+                ProgressView()
+            }
         }
+        .frame(width: 75, height: 75)
+        .clipShape(Circle())
+        .overlay(Circle().stroke(Color.white, lineWidth: 4))
+        .shadow(radius: 10)
     }
 }
 
