@@ -73,6 +73,8 @@ struct GuessCat: View {
                                 .foregroundColor(.black)
                         })
                         Spacer()
+                        Text("Score: \(score)")
+                        Spacer()
                         Button(action: {
                             if let chackingCat = guessCat.secondCat {
                                 self.checkAnswer(whit: chackingCat, in: guessCat)
@@ -85,8 +87,8 @@ struct GuessCat: View {
                                 .foregroundColor(.black)
                         })
                     }
+                    Spacer()
                     Text(checkAnswerLable)
-                    Text("Score: \(score)")
                 }
             }
             .padding(25)
