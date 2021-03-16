@@ -20,7 +20,7 @@ struct CatGallery: View {
             NavigationView {
                 ScrollView {
                     LazyVGrid(columns: gridItemLayout, spacing: spacing) {
-                        ForEach(catBreedsData) { catBreed in
+                        ForEach(DataCatBreeds.catBreedsData) { catBreed in
                             //create and configure NavigationLink to destination CatImageDetail view
                             NavigationLink(destination: CatImageDetail(imageCat: catBreed.image)
                                             .navigationBarTitle(catBreed.name)) {

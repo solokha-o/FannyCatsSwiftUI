@@ -17,7 +17,7 @@ struct BreedsList: View {
             //create list from CatBreedsRow and add image from CatImage and configure filter from catBreedsData in searchText
             List {
                 SearchBarView(text: $searchText)
-                ForEach(catBreedsData.filter({ switch searchText.isEmpty {
+                ForEach(DataCatBreeds.catBreedsData.filter({ switch searchText.isEmpty {
                 case false:
                     return $0.name.lowercased().contains(searchText.lowercased()) || $0.origin.lowercased().contains(searchText.lowercased())
                 default:

@@ -21,6 +21,6 @@ struct FannyCatsWidgetView: View {
 
 struct FannyCatsWidgetView_Previews: PreviewProvider {
     static var previews: some View {
-        FannyCatsWidgetView(catBreed: catBreedsData[0])
+        FannyCatsWidgetView(catBreed: DataCatBreeds.catBreedsData[0])
     }
 }

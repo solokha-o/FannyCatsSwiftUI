@@ -12,11 +12,11 @@ import Intents
 struct Provider: IntentTimelineProvider {
     
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), catBreed: CatBreedsDataBaseModel.randomCatBreed(in: catBreedsData))
+        SimpleEntry(date: Date(), catBreed: CatBreedsDataBaseModel.randomCatBreed(in: DataCatBreeds.catBreedsData))
     }
 
     func getSnapshot(for configuration: ConfigurationIntent, in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), catBreed: CatBreedsDataBaseModel.randomCatBreed(in: catBreedsData))
+        let entry = SimpleEntry(date: Date(), catBreed: CatBreedsDataBaseModel.randomCatBreed(in: DataCatBreeds.catBreedsData))
         completion(entry)
     }
 
@@ -25,9 +25,9 @@ struct Provider: IntentTimelineProvider {
 
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
+        for hourOffset in 0 ..< 24 {
             let entryDate = Calendar.current.date(byAdding: .minute, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, catBreed: CatBreedsDataBaseModel.randomCatBreed(in: catBreedsData))
+            let entry = SimpleEntry(date: entryDate, catBreed: CatBreedsDataBaseModel.randomCatBreed(in: DataCatBreeds.catBreedsData))
             entries.append(entry)
         }
 
@@ -46,6 +46,7 @@ struct WidgetFannyCatsSwiftUIEntryView : View {
 
     var body: some View {
         FannyCatsWidgetView(catBreed: entry.catBreed)
+//            .widgetURL(entry.catBreed.url)
     }
 }
 
@@ -65,7 +66,7 @@ struct WidgetFannyCatsSwiftUI: Widget {
 
 struct WidgetFannyCatsSwiftUI_Previews: PreviewProvider {
     static var previews: some View {
-        WidgetFannyCatsSwiftUIEntryView(entry: SimpleEntry(date: Date(), catBreed: CatBreedsDataBaseModel.randomCatBreed(in: catBreedsData)))
+        WidgetFannyCatsSwiftUIEntryView(entry: SimpleEntry(date: Date(), catBreed: CatBreedsDataBaseModel.randomCatBreed(in: DataCatBreeds.catBreedsData)))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

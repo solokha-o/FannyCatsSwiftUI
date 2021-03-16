@@ -26,8 +26,8 @@ struct CatBreedsRow: View {
 struct CatBreedsRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            CatBreedsRow(catBreed: catBreedsData[0])
-            CatBreedsRow(catBreed: catBreedsData[1])
+            CatBreedsRow(catBreed: DataCatBreeds.catBreedsData[0])
+            CatBreedsRow(catBreed: DataCatBreeds.catBreedsData[1])
         }
         .previewLayout(.fixed(width: 300, height: 70))
     }

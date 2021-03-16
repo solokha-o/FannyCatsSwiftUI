@@ -37,6 +37,6 @@ struct GalleryImage: View {
 
 struct GalleryImage_Previews: PreviewProvider {
     static var previews: some View {
-        GalleryImage(imageCat: catBreedsData[0].image, size: 100)
+        GalleryImage(imageCat: DataCatBreeds.catBreedsData[0].image, size: 100)
     }
 }

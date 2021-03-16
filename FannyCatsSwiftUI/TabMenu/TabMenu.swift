@@ -15,12 +15,11 @@ struct TabMenu: View {
     @State var tabMenuViews: [AnyView] = [AnyView(BreedsList()), AnyView(GuessCat()), AnyView(CatGallery())]
     //configure main body
     var body: some View {
-        
         //transition when chosen current view
         ForEach(tabMenuViews.indices) { indexView in
             if indexView == index {
                 tabMenuViews[indexView]
-                    .transition(AnyTransition.opacity.combined(with: .slide))
+                    .transition(AnyTransition.opacity.combined(with: .move(edge: .leading)))
             }
         }
         Spacer(minLength: 15)
@@ -110,7 +109,7 @@ struct TabMenu: View {
             .padding(.bottom, UIApplication.shared.windows.first?.safeAreaInsets.bottom == 0 ? 8 : UIApplication.shared.windows.first?.safeAreaInsets.bottom)
             .padding(.top, 8)
             .background(Color.init(.systemTeal).clipShape(CShape(curvePos: curvePos)))
-        }).edgesIgnoringSafeArea(.all)
+        })
     }
 }
 

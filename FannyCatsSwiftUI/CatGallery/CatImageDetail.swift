@@ -55,6 +55,6 @@ struct CatImageDetail: View {
 
 struct CatImageDetail_Previews: PreviewProvider {
     static var previews: some View {
-        CatImageDetail(imageCat: catBreedsData[0].image)
+        CatImageDetail(imageCat: DataCatBreeds.catBreedsData[0].image)
     }
 }
