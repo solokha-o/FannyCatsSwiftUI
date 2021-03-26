@@ -1,3 +1,5 @@
+# FannyCatsSwiftUI
+
 The same iOS mobile app like https://github.com/solokha-o/FunnyCats , but written on SwiftUI.</br>
 My experience with SwiftUI and WidgetKit lybrary.</br>
 1-st part is the table with breeds of cats what load from API https://thecatapi.com</br>
